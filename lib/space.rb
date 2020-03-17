@@ -1,7 +1,9 @@
+require 'pg'
+
 class Space
   attr_reader :name
   def initialize(space_name:)
-    @name = name
+    @name = space_name
   end
 
 

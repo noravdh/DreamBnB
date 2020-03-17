@@ -21,6 +21,7 @@ class DreamBnB < Sinatra::Base
 
   get '/spaces' do
     erb :spaces
+  end
 
   get '/' do
     'Welcome to DreamBnB'

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/aviharding/projects/DreamBnB/spec/features/add_space_spec.rb": {
+      "/Users/student/Makers/teamwork/DreamBnB/spec/features/add_space_spec.rb": {
         "lines": [
           1,
           null,
@@ -21,7 +21,7 @@
           null
         ]
       },
-      "/Users/aviharding/projects/DreamBnB/spec/features/sign_up_spec.rb": {
+      "/Users/student/Makers/teamwork/DreamBnB/spec/features/sign_up_spec.rb": {
         "lines": [
           1,
           null,
@@ -41,7 +41,7 @@
           null
         ]
       },
-      "/Users/aviharding/projects/DreamBnB/spec/space_spec.rb": {
+      "/Users/student/Makers/teamwork/DreamBnB/spec/space_spec.rb": {
         "lines": [
           1,
           null,
@@ -54,7 +54,7 @@
           null
         ]
       },
-      "/Users/aviharding/projects/DreamBnB/spec/user_spec.rb": {
+      "/Users/student/Makers/teamwork/DreamBnB/spec/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -67,6 +67,6 @@
         ]
       }
     },
-    "timestamp": 1584457677
+    "timestamp": 1584460525
   }
 }

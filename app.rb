@@ -32,6 +32,7 @@ class DreamBnB < Sinatra::Base
   end
 
   post '/sign-up' do
+    @user = User.create(user_name: params[:user_name], password: params[:password])
     redirect '/'
   end
 

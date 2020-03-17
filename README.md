@@ -7,6 +7,10 @@ make 2 tables
 CREATE TABLE login(id SERIAL PRIMARY KEY, user_name VARCHAR(60));
 CREATE TABLE space(id SERIAL PRIMARY KEY, space_name VARCHAR(60));
 
+make column in login table
+ALTER TABLE login ADD COLUMN password VARCHAR(60);
+
+
 User stories
 As a user, so that I can access the website,
 I want to be able to sign up.

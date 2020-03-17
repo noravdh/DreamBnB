@@ -1,0 +1,1 @@
+CREATE TABLE login(id SERIAL PRIMARY KEY, user_name VARCHAR(60));

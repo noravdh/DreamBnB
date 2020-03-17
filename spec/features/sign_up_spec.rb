@@ -11,6 +11,6 @@ feature 'The homepage' do
     fill_in('user_name', with: 'Avril')
     fill_in('password', with: '123')
     click_button('Sign up')
-    expect(page).to have_content 'You have signed up to DreamBnB!'
+    expect(page).to have_content 'Welcome to DreamBnB'
   end
 end

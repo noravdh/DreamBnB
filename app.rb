@@ -26,9 +26,11 @@ class DreamBnB < Sinatra::Base
     'Welcome to DreamBnB'
   end
 
-  post '/sign-up' do
-    'You have signed up to DreamBnB!'
+  get '/sign-up' do
     erb :"sign_up"
+  end
+
+  post '/sign-up' do
     redirect '/'
   end
 

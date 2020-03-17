@@ -1,6 +1,12 @@
 Description
 DreamBnB is an application that allows users to list spaces to rent & book places to stay.
 
+CREATE A DATABASE
+Call it 'DreamBnB'
+make 2 tables
+CREATE TABLE login(id SERIAL PRIMARY KEY, user_name VARCHAR(60));
+CREATE TABLE space(id SERIAL PRIMARY KEY, space_name VARCHAR(60));
+
 User stories
 As a user, so that I can access the website,
 I want to be able to sign up.
@@ -27,4 +33,4 @@ As an owner, so that my space doesn't get double-booked,
 I want users to only be able to book once.
 
 As an owner, so that the odds of my space being booked are higher,
-I want my space to stay available until a renter has confirmed their booking. 
+I want my space to stay available until a renter has confirmed their booking.

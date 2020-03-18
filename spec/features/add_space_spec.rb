@@ -11,6 +11,6 @@ feature 'Add a space' do
     fill_in('name', with: 'Sunny Appartment')
     click_button('Submit')
 
-    expect(page).to have_content 'All appartments:'
+    expect(page).to have_content 'All apartments:'
   end
 end

@@ -1,1 +1,8 @@
-<h2>All appartments:</h2>
+<h2>All apartments:</h2>
+
+
+<ul>
+  <% @spaces.each do |space| %>
+  <li><%= space.name %></li>
+  <% end %>
+</ul>

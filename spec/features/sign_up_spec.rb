@@ -7,10 +7,10 @@ feature 'The homepage' do
   end
 
   scenario 'The user can sign up with a name and password' do
-    visit ('/sign-up')
+    visit ('/')
     fill_in('user_name', with: 'Avril')
     fill_in('password', with: '123')
     click_button('Sign up')
-    expect(page).to have_content 'Welcome to DreamBnB'
+    expect(page).to have_content 'All apartments'
   end
 end

@@ -15,12 +15,13 @@ class DreamBnB < Sinatra::Base
   end
 
   post '/new-space' do
-    @space = Space.create(space_name: params[:name], space_description: params[:description], space_price: params[:price])
+    @space = Space.create(space_name: params[:name], space_description: params[:description], space_price: params[:price],
+      from_date: params[:from], to_date: params[:to])
     redirect '/spaces'
   end
 
   get '/spaces' do
-    @spaces = Space.all 
+    @spaces = Space.all
     erb :spaces
   end
 

@@ -37,5 +37,9 @@ class DreamBnB < Sinatra::Base
     redirect '/'
   end
 
+  get '/calendar' do
+    erb :calendar
+  end
+
   run! if app_file == $0
 end

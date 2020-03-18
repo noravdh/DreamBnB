@@ -20,21 +20,19 @@ class DreamBnB < Sinatra::Base
   end
 
   get '/spaces' do
-    @spaces = Space.all 
+    @spaces = Space.all
     erb :spaces
+
   end
 
   get '/' do
-    'Welcome to DreamBnB'
-  end
-
-  get '/sign-up' do
     erb :"sign_up"
   end
 
-  post '/sign-up' do
+
+  post '/' do
     @user = User.create(user_name: params[:user_name], password: params[:password])
-    redirect '/'
+    redirect '/spaces'
   end
 
   get '/calendar' do

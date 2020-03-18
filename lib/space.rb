@@ -29,7 +29,7 @@ class Space
       connection = PG.connect(dbname: 'DreamBnB')
     end
       result = connection.exec("SELECT * FROM space;")
-      result.map { |space| Space.new(space_name: space["space_name"]) }
+      result.map { |space| Space.new(space_name: space["space_name"], space_description: space["space_description"], space_price: space["space_price"]) }
   end
 
 end

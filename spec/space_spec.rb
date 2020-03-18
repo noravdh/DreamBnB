@@ -12,7 +12,7 @@ describe Space do
 
 
   it 'can list all spaces' do
-    space = Space.create(space_name: "Sunny Appartment")
+    space = Space.create(space_name: "Sunny Appartment", space_description: "test description", space_price: "500")
     spaces = Space.all
 
     expect(spaces.first.name).to eq "Sunny Appartment"

@@ -10,6 +10,9 @@ CREATE TABLE space(id SERIAL PRIMARY KEY, space_name VARCHAR(60));
 make column in login table
 ALTER TABLE login ADD COLUMN password VARCHAR(60);
 
+make column in space table
+ALTER TABLE space ADD COLUMN space_description VARCHAR(150);
+ALTER TABLE space ADD COLUMN space_price VARCHAR(60);
 
 User stories
 As a user, so that I can access the website,

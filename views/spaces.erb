@@ -3,6 +3,12 @@
 <ul>
   <% @spaces.each do |space| %>
   <li><%= space.name %>
+<ul>
+  <li><%= space.description %>
+  </li>
+    <li><%= space.price %>
+    </li>
+</ul>
   <form action="/calendar">
   <input type="submit" value="Request" />
   </form>

@@ -8,4 +8,14 @@ describe Space do
     expect(space.description).to eq "Well located and sunny apartment"
     expect(space.price).to eq "£500 per month"
   end
+
+
+
+  it 'can list all spaces' do
+    space = Space.create(space_name: "Sunny Appartment")
+    spaces = Space.all
+
+    expect(spaces.first.name).to eq "Sunny Appartment"
+  end
+
 end

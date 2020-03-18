@@ -13,6 +13,6 @@ feature 'Add a space' do
     fill_in('price', with: '£500 per month')
     click_button('Submit')
 
-    expect(page).to have_content 'All appartments:'
+    expect(page).to have_content 'All apartments:'
   end
 end

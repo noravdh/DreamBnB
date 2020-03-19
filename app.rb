@@ -36,7 +36,8 @@ class DreamBnB < Sinatra::Base
     redirect '/spaces'
   end
 
-  get '/calendar' do
+  get '/calendar/:id' do
+    @requested_space = Space.select_by_id(id: params[:id])
     erb :calendar
   end
 

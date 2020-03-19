@@ -43,7 +43,7 @@ class Space
     else
       connection = PG.connect(dbname: 'DreamBnB')
     end
-    result = connection.exec("SELECT * FROM space WHERE id = id;")
+    result = connection.exec("SELECT * FROM space WHERE id = ('#{id}');")
     result.map { |space| Space.new(id: space['id'], space_name: space["space_name"], space_description: space["space_description"], space_price: space["space_price"], from_date: space['from_date'], to_date: space['to_date']) }
   end
 

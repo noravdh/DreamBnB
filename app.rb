@@ -39,6 +39,7 @@ class DreamBnB < Sinatra::Base
 
   get '/calendar/:id' do
     @requested_space = Space.select_by_id(id: params[:id]).first
+    p id: params[:id]
     @from_date = (Date.parse(@requested_space.from_date))
     @to_date = (Date.parse(@requested_space.to_date))
     @date_array = (@from_date..@to_date)
@@ -46,6 +47,11 @@ class DreamBnB < Sinatra::Base
   end
 
   post '/bookings' do
+    # push every param into an array
+    # push array into postgres
+    # booking table we want dates, space_renter, space_id foreign key - id?,
+    # make a space id when we create a space
+    # space table add a space owner
     p 'bookings'
   end
 

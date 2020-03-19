@@ -40,5 +40,9 @@ class DreamBnB < Sinatra::Base
     erb :calendar
   end
 
+  post '/bookings' do
+    p 'bookings'
+  end
+
   run! if app_file == $0
 end

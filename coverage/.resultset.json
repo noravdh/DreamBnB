@@ -23,6 +23,17 @@
           null
         ]
       },
+      "/Users/student/projects/DreamBnB/spec/features/calendar_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/student/projects/DreamBnB/spec/features/list_space_spec.rb": {
         "lines": [
           1,
@@ -104,6 +115,6 @@
         ]
       }
     },
-    "timestamp": 1584549609
+    "timestamp": 1584612971
   }
 }

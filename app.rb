@@ -17,7 +17,8 @@ enable :sessions
   end
 
   post '/new-space' do
-    @space = Space.create(space_name: params[:name], space_description: params[:description], space_price: params[:price],
+    @user = session[:user]
+    @space = Space.create(user_id: @user.user_id, space_name: params[:name], space_description: params[:description], space_price: params[:price],
       from_date: params[:from], to_date: params[:to])
     redirect '/spaces'
   end

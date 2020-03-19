@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './lib/space'
 require './lib/user'
+require 'date'
 
 
 class DreamBnB < Sinatra::Base
@@ -36,7 +37,11 @@ class DreamBnB < Sinatra::Base
     redirect '/spaces'
   end
 
-  get '/calendar' do
+  get '/calendar/:id' do
+    @requested_space = Space.select_by_id(id: params[:id]).first
+    @from_date = (Date.parse(@requested_space.from_date))
+    @to_date = (Date.parse(@requested_space.to_date))
+    @date_array = (@from_date..@to_date)
     erb :calendar
   end
 

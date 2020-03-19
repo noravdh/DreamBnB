@@ -12,15 +12,15 @@ class Space
   end
 
 
-  def self.create(space_name:, space_description:, space_price:, from_date:, to_date:)
+  def self.create(space_name:, space_description:, space_price:, from_date:, to_date:, user_id:)
     if ENV['ENVIRONMENT'] == 'test'
       connection = PG.connect(dbname: 'DreamBnB_test')
     else
       connection = PG.connect(dbname: 'DreamBnB')
     end
 
-    result = connection.exec("INSERT INTO space (space_name, space_description, space_price, from_date, to_date)
-    VALUES('#{space_name}', '#{space_description}', '#{space_price}', '#{from_date}', '#{to_date}')
+    result = connection.exec("INSERT INTO space (space_name, space_description, space_price, from_date, to_date, user_id)
+    VALUES('#{space_name}', '#{space_description}', '#{space_price}', '#{from_date}', '#{to_date}', '#{user_id}')
     RETURNING id, space_name, space_description, space_price, from_date, to_date;")
     Space.new(id: result[0]['id'], space_name: result[0]['space_name'], space_description: result[0]['space_description'], space_price: result[0]['space_price'], from_date: result[0]['from_date'], to_date: result[0]['to_date'])
   end

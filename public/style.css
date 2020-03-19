@@ -19,9 +19,7 @@ input[type=text] {
  border-color: #FFFFFF #327CB5 #327CB5 #FFFFFF;
  border-radius: 10px 10px 10px 10px;
  box-shadow: 1px 1px 3px #333333;
- color: #FFFFFF;
  cursor: pointer;
- padding: 5px;
  text-align: center;
  font-size: 14;
 }

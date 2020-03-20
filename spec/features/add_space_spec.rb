@@ -7,7 +7,11 @@ feature 'Add a space' do
   # end
 
   scenario 'Users can fill in the form to add a space' do
-    visit('/add-space')
+    visit ('/')
+    fill_in('user_name', with: 'Avril')
+    fill_in('password', with: '123')
+    click_button('Sign up')
+    click_button('Add Space')
     fill_in('name', with: 'Sunny Appartment')
     fill_in('description', with: 'Well located and sunny apartment')
     fill_in('price', with: '£500 per month')

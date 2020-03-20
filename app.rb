@@ -59,7 +59,6 @@ enable :sessions
     @user = session[:user]
     @space_id = session[:space_id]
     @dates = params[:date]
-    p @dates
     booking = Booking.create(space_renter: @user.user_name, space_id: @space_id, dates: @dates)
     @booked_space = Space.select_by_id(id: @space_id).first
     erb :bookings

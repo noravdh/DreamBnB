@@ -8,7 +8,7 @@ body  {
   font-family: courier;
   font-size: 160%;
   background-color: #66A3D2;
-  /* text-align: center; */
+  text-align: center;
 }
 
 input[type=text] {

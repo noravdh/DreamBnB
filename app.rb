@@ -62,11 +62,6 @@ enable :sessions
     booking = Booking.create(space_renter: @user.user_name, space_id: @space_id, dates: @dates)
     @booked_space = Space.select_by_id(id: @space_id).first
     erb :bookings
-    # push every param into an array
-    # push array into postgres
-    # booking table we want dates, space_renter, space_id foreign key - id?,
-    # make a space id when we create a space
-    # space table add a space owner
   end
 
   run! if app_file == $0

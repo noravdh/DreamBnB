@@ -4,22 +4,14 @@ h2 {
   text-align: center;
 }
 body  {
-  color: blue;
-  font-family: courier;
+  color: white;
+  font-family: verdana;
   font-size: 160%;
   background-color: #66A3D2;
   text-align: center;
 }
 
-input[type=text] {
- width: 20%;
- height: 34px;
- padding: 12px 20px;
- margin: 8px 0;
- border-color: #FFFFFF #327CB5 #327CB5 #FFFFFF;
- border-radius: 10px 10px 10px 10px;
- box-shadow: 1px 1px 3px #333333;
- cursor: pointer;
- text-align: center;
- font-size: 14;
+.button {
+  margin: 10px;
+
 }

@@ -40,9 +40,15 @@ enable :sessions
     redirect '/spaces'
   end
 
-  get '/calendar/:id' do
+  post '/calendar/:id' do
     @requested_space = Space.select_by_id(id: params[:id]).first
+    session[:requested_space] = @requested_space
     session[:space_id] = @requested_space.id
+    redirect '/calendar'
+  end
+
+  get '/calendar' do
+    @requested_space = session[:requested_space]
     @from_date = (Date.parse(@requested_space.from_date))
     @to_date = (Date.parse(@requested_space.to_date))
     @date_array = (@from_date..@to_date)

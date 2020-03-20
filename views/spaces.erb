@@ -3,14 +3,14 @@
 </head>
 <img src="clouds-xxl.png">
 
-<form style="text-align: right" action="/add-space">
+<form action="/add-space" style="text-align:right;">
 <input type="submit" value="Add Space" />
 </form>
 
 
-<h2 style="text-align: left">All apartments:</h2>
+<h2 style="text-align:left;">All apartments:</h2>
 
-  <div style="text-align: left">
+<div style="text-align:left;">
 <ul>
   <% @spaces.each do |space| %>
   <li><%= space.name %>

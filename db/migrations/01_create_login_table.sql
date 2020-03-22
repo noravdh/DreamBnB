@@ -1,1 +1,1 @@
-CREATE TABLE login(id SERIAL PRIMARY KEY, user_name VARCHAR(60));
+CREATE TABLE login(user_id SERIAL PRIMARY KEY, user_name VARCHAR(60));
